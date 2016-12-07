@@ -9,7 +9,20 @@ NativeScript adheres to the CommonJS specification for dealing with
 JavaScript modules. The CommonJS require() function is how you import
 JavaScript modules defined in other files.
 */ 
-var createViewModel = require("./main-view-model").createViewModel;
+var Observable = require("data/observable").Observable;
+
+function createViewModel() {
+    var viewModel = new Observable();
+    viewModel.counter = 42;
+    viewModel.message = '';
+
+    viewModel.onTap = function() {
+        this.counter--;
+        this.set("message", getMessage(this.counter));
+    }
+
+    return viewModel;
+}
 
 function onNavigatingTo(args) {
     /*
