@@ -1,0 +1,12 @@
+# NPM
+npm-debug.log*
+node_modules
+.npm
+
+# NativeScript
+platforms
+
+# Other
+secret
+logs
+*.log

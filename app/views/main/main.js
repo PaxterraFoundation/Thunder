@@ -8,7 +8,7 @@ logic, and to set up your page’s data binding.
 NativeScript adheres to the CommonJS specification for dealing with
 JavaScript modules. The CommonJS require() function is how you import
 JavaScript modules defined in other files.
-*/ 
+*/
 var Observable = require("data/observable").Observable;
 
 function createViewModel() {
@@ -18,7 +18,7 @@ function createViewModel() {
 
     viewModel.onTap = function() {
         this.counter--;
-        this.set("message", getMessage(this.counter));
+        this.set("message", "You tapped that");
     }
 
     return viewModel;
