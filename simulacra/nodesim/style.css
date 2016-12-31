@@ -1,0 +1,110 @@
+/* Coolors Exported Palette - coolors.co/2589bd-187795-38686a-a3b4a2-cdc6ae 
+
+$color1: hsla(201%, 67%, 44%, 1);
+$color2: hsla(194%, 72%, 34%, 1);
+$color3: hsla(182%, 31%, 32%, 1);
+$color4: hsla(117%, 11%, 67%, 1);
+$color5: hsla(46%, 24%, 74%, 1);
+
+$color1: rgba(37, 137, 189, 1);
+$color2: rgba(24, 119, 149, 1);
+$color3: rgba(56, 104, 106, 1);
+$color4: rgba(163, 180, 162, 1);
+$color5: rgba(205, 198, 174, 1);
+*/
+
+#nodeView {
+	border: 1px solid black;
+	margin: auto;
+	width: 600;
+	height: 900;
+	font-family: arial, helvetica, sans-serif;
+	padding: 2em;
+}
+#nodeView ul.tab {
+	margin: -2em -2em 0 -2em;
+}
+#nodeView li .face {
+	float: left;
+}
+#nodeView #conversation #prompt h1,
+#nodeView #conversation #prompt h2,
+#nodeView #conversation #prompt h3,
+#nodeView #conversation #prompt h4,
+#nodeView #conversation #prompt h5,
+#nodeView #conversation #prompt h6 {
+	line-height: 1em;
+}
+
+#nodeView #conversation #prompt h1,
+#nodeView #conversation #prompt h3,
+#nodeView #conversation #prompt h5 {
+	color: rgba(163, 180, 162, 1);
+}
+#nodeView #conversation #prompt h1::before,
+#nodeView #conversation #prompt h3::before,
+#nodeView #conversation #prompt h5::before {
+	content: "B: ";
+}
+
+#nodeView #conversation #prompt h2,
+#nodeView #conversation #prompt h4,
+#nodeView #conversation #prompt h6 {
+	color: rgba(205, 198, 174, 1);
+}
+#nodeView #conversation #prompt h2::before,
+#nodeView #conversation #prompt h4::before,
+#nodeView #conversation #prompt h6::before {
+	content: "A: ";
+}
+
+#nodeView #conversation #response input {
+	border: 0;
+	border-radius: 3px;
+	padding: 0.5em;
+	background: green;
+	color: #fff;
+}
+
+#nodeDisplay div {
+	float: left;
+	width: 300px;
+	padding: 1em;
+	overflow: hidden;
+	margin: 1em;
+	border: 1px solid #ccc;
+}
+#nodeDisplay div.current {
+	background: #ccc;
+}
+#nodeDisplay div h1 {
+	font-size: 1em;
+}
+#nodeDisplay div h2 {
+	font-size: 0.7em;
+}
+
+ul.tab {
+	list-style: none;
+	border-bottom: 1px solid #aaa;
+}
+ul.tab li {
+	float: left;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	border: 1px solid #eee;
+	border-bottom: 4px solid #ccc;
+}
+ul.tab.three li {	width: 32%;	}
+ul.tab.four li  {	width: 24%;	}
+ul.tab.five li  {	width: 20%;	}
+ul.tab.six li   {	width: 16%;	}
+
+ul.tab li.ratified {
+	border-bottom-color: rgba(37, 137, 189, 1);
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

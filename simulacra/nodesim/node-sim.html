@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="./sprites.css" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+	</head>
+	<body onload="main();">
+		<div id="nodeView">
+			<div id="conversation">
+				<h1>History</h1>
+				<div id="prompt">
+				</div>
+
+				<h1>Your Move</h1>
+				<div id="response">
+					<div id="accordion">
+					</div>
+				</div>
+			</div>
+
+			<div id="nodeDisplay"></div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+		<script src="./User.class.js"></script>
+		<script src="./Crumb.class.js"></script>
+		<script src="./Node.class.js"></script>
+		<script src="./NodeFactory.class.js"></script>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
